@@ -1,0 +1,49 @@
+.jumbotron {
+    margin:0;
+    padding: 30px;
+    background-image: url(/img/car-1.png);
+    background-size: cover;
+    background-position: center center;
+    color: white;
+}
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+h1, h2 {
+    font-family: "Quicksand", sans-serif;
+}
+
+.row-content-1 {
+    padding: 50px 0;
+    min-height: 540px;
+}
+.row-content-2 {
+    padding: 70px;
+    min-height: 200px;
+}
+
+.row-content-3 {
+    padding: 50px 0;
+    min-height: 400px;
+}
+
+.site-footer {
+    padding:10px 0;
+    min-height: 400px;
+}
+.navbar {
+    background-color: black;
+    color: white
+}
+  .navbar-dark .navbar-nav .nav-link {
+    color: white;
+  }
+/* .left-nav, .left-navv, .navbar-brand{
+    position: relative;
+    left:200px 
+} */
+/* .right-nav{
+    position: relative;
+    left:1000px 
+} */

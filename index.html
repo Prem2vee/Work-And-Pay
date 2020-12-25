@@ -1,11 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+    <!-- Additional CSS must be placed after Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Sacramento&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+
+
     <title>Work And Pay</title>
 </head>
 <body>
-    
+    <nav class="navbar navbar-expand-sm navbar-dark bg-black sticky-top"><a class="navbar-brand" href="index.html">Work & Pay</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Company</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">About us</a>
+                        <a class="dropdown-item" href="#">How Work & Pay works</a>
+                        <a class="dropdown-item" href="#">Leadership</a>
+                        <a class="dropdown-item" href="#">Partners</a>
+                        <a class="dropdown-item" href="#">Careers</a>
+                        <a class="dropdown-item" href="#">News & Blog</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Help</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Safety</a>
+                </li>
+                <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Products</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Drivers</a>
+                            <a class="dropdown-item" href="#">Owners</a>
+                            <a class="dropdown-item" href="#">Tracking</a>
+                        </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Log in</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sign up</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <div class="row row-content-1">
+                <div class="col">
+                    <h1>connecting owners to drivers</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row row-content-2 offset-2">
+            <div class="col-lg-6">
+                <h2>Our Core Activities</h2>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row row-content-3">
+            <div class="col-sm-4">
+                <h2 class="bg ">Our Core Activities</h2>
+                <p>Lorem Ipsum is simply dummy text of the
+                    printing and typesetting industry.</p>
+            </div>
+            <div class="col-sm-4">
+                <h2>Our Core Activities</h2>
+                <p>Lorem Ipsum is simply dummy text of the
+                    printing and typesetting industry.</p>
+            </div>
+            <div class="col-sm-4">
+                <h2>Our Core Activities</h2>
+                <p>Lorem Ipsum is simply dummy text of the
+                    printing and typesetting industry.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="">
+        <div class="container">
+            <div class="row row-content-4">
+                <div class="col-4 col-sm-2">
+                    <h5>Company</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Company</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Partners</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">News</a></li>
+                    </ul>
+                </div>
+                <div class="col-4 col-sm-2 offset-2">
+                    <h5>Products</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Drive</a></li>
+                        <li><a href="#">Owner</a></li>
+                        <li><a href="#">Tracking</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row row-content-4">
+                <div class="col-4 col-sm-5">
+                    <a href="http://instagram.com/">Instagram</a>
+                    <a href="http://facebook.com/">Facebook</a>
+                    <a href="http://twitter.com/">Twitter</a>
+                    <a href="http://youtube.com/">YouTube</a>
+                </div>
+                <div class="text-center col-sm-4">
+                    Tel: +233-246-783-336<br />
+                    Email: info@workandpay.com
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
 </body>
 </html>
