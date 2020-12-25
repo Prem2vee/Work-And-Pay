@@ -13,6 +13,10 @@ body {
 h1, h2 {
     font-family: "Quicksand", sans-serif;
 }
+h4 {
+    position: absolute;
+    margin-left:-125px
+}
 
 .row-content-1 {
     padding: 50px 0;
@@ -27,23 +31,44 @@ h1, h2 {
     padding: 50px 0;
     min-height: 400px;
 }
+.row-content-4 {
+    padding: 50px 0;
+    min-height: 200px;
+}
 
-.site-footer {
+.company-footer{
     padding:10px 0;
     min-height: 400px;
+    color:white;
+    background-color: black;
 }
-.navbar {
+.navbar, .footer-links{
+    margin-top: 20px;
     background-color: black;
     color: white
 }
   .navbar-dark .navbar-nav .nav-link {
     color: white;
   }
-/* .left-nav, .left-navv, .navbar-brand{
+  .last-div {
+      letter-spacing: 30px;
+      position: relative;
+      margin-top: 30px;
+      margin-left:-70px
+  }
+.home-link{
     position: relative;
-    left:200px 
-} */
-/* .right-nav{
-    position: relative;
-    left:1000px 
-} */
+    margin-top:50px;
+    padding: 50px;
+    color: white;
+}
+.phone {
+    position:relative;
+    margin-top:25px;
+    margin-left:50px
+}
+.mail {
+    position:relative;
+    margin-top:25px;
+    margin-left:20px
+}
