@@ -15,133 +15,213 @@
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Sacramento&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
     <link rel="stylesheet" href="css/styles.css">
-
 
     <title>Work And Pay</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-sm navbar-dark bg-black sticky-top"><a class="navbar-brand" href="index.html">Work &amp; Pay</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Company</a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="about-us.html">About us</a>
-                        <a class="dropdown-item" href="#">How Work &amp; Pay works</a>
-                        <a class="dropdown-item" href="#">Leadership</a>
-                        <a class="dropdown-item" href="#">Partners</a>
-                        <a class="dropdown-item" href="#">Careers</a>
-                        <a class="dropdown-item" href="#">News & Blog</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Help</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Safety</a>
-                </li>
-                <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-list"></i> Products</a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Drivers</a>
-                            <a class="dropdown-item" href="#">Owners</a>
-                            <a class="dropdown-item" href="#">Tracking</a>
-                        </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="fa fa-user"></i> Log in</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Sign up</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+
+<nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+    <a class="navbar-brand" href="index.html">
+        <img src="img/logo.png" width="50" height="50" class="d-inline-block align-center logo" alt="logo" loading="lazy"> Work &amp; Pay
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Company</a>
+                <div class="dropdown-menu col-xl-2" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="about-us.html">About us</a>
+                    <a class="dropdown-item" href="how.html">How W&amp;P works</a>
+                    <a class="dropdown-item" href="leadership.html">Leadership</a>
+                    <a class="dropdown-item" href="partners.html">Partners</a>
+                    <a class="dropdown-item" href="careers.html">Careers</a>
+                    <a class="dropdown-item" href="news-blog.html">News & Blog</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Help</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Safety</a>
+            </li>
+        </ul>
+        <span class="navbar-nav nav-product">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-5">
+                    <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-list"></i> Products</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="driver.html">Drivers</a>
+                                <a class="dropdown-item" href="owner.html">Owners</a>
+                                <a class="dropdown-item" href="tracking.html">Tracking</a>
+                            </div>
+                    </li>
+                    <li class="nav-item">
+                        <button style ="margin-right:3px;"class="btn btn-outline-success" type="button" id="btn-log"><a href="login.html"><i class="fa fa-user"></i> Log in</a></button>
+                    </li>
+                    <li class="nav-item">
+                         <button class="btn btn-outline-success font-weight-bold" type="button" id="btn-sign"><a href="sign-up.html">Sign up</a></button>
+                    </li>
+                </ul>
+            </div>
+        </span>
+    </div>
+</nav>
+
+
 
     <header class="jumbotron jumbotron-fluid">
         <div class="container">
             <div class="row row-content-1">
-                <div class="col">
-                    <h1>connecting owners to drivers</h1>
+                <div class="col-md-8 ml-auto text-center">
+                    <h1 id="htext">Connecting Owners to Drivers</h1>
                 </div>
             </div>
         </div>
     </header>
 
-    <div class="container">
-        <div class="row row-content-2 offset-2">
-            <div class="col-lg-6">
-                <h2>Our Core Activities</h2>
-            </div>
+    <div class="row row-content-2">
+        <div class="col">
+            <p class="text-center p-index"> WHAT WE DO</p>
         </div>
     </div>
     <div class="container">
         <div class="row row-content-3">
-            <div class=" col-md-12 col-sm-4 ">
-                <h2 class="bg ">Our Core Activities</h2>
-                <p>Lorem Ipsum is simply dummy text of the
-                    printing and typesetting industry.</p>
+            <div class="col-md-4 col-sm-4">
+                <div class="left-mid-image">
+                    <!-- image is in css file -->
+                </div>
+                <h5 class="text-center h5-bottom">
+                    <a href="owner.html" class="h5-a">INCOME FOR OWNERS</a>
+                </h5>
+                <p class="text-center h5-p">We manage vehicles on behalf of owners whiles assuring business continuity and an increment owner's wealth</p>
             </div>
-            <div class="col-sm-4">
-                <h2>Our Core Activities</h2>
-                <p>Lorem Ipsum is simply dummy text of the
-                    printing and typesetting industry.</p>
+            <div class="col-md-4 col-sm-4">
+                <div class="center-mid-image">
+                    <!-- image is in css file  -->
+                </div>
+                <h5 class="text-center h5-bottom">
+                    <a href="tracking.html " class="h5-a">VEHICLE TRACKING</a>
+                </h5>
+                <p class="text-center h5-p">We track your vehicles to give both security of asset and business assurance to both owners and drivers</p>
             </div>
-            <div class="col-sm-4">
-                <h2>Our Core Activities</h2>
-                <p>Lorem Ipsum is simply dummy text of the
-                    printing and typesetting industry.</p>
+            <div class="col-md-4 col-sm-4">
+                <div class="right-mid-image">
+                    <!-- image is in css file -->
+                </div>
+                <h5 class="text-center h5-bottom">
+                    <a href="driver.html" class="h5-a">EARNINGS FOR DRIVERS</a>
+                </h5>
+                <p class="text-center h5-p">We give qualified drivers the opportunity to earn a decent income whiles becoming a vehicle-owner in a few months.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container middle-session">
+        <div class="row row-content-3">
+            <div class="col-md-4 col-sm-4">
+                <div class="left-bottom-image">
+                    <i class="fa fa-users fa-lg"></i>
+                </div>
+                <div>
+                    <p class="p6">About us</p>
+                    <p>Come find out how we began, what motivates, and where we strive to be in the nearest future.</p>
+                </div>
+                <div>
+                    <a class="learn" href="about-us.html">Learn more...</a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <div class="center-bottom-image">
+                    <i class="fa fa-file fa-lg"></i>
+                </div>
+                <div>
+                    <p class="p6">News &amp; Blog</p>
+                    <p>See latest announcement concerning new initiatives and partnerships.</p>
+                </div>
+                <div>
+                    <a class="learn" href="news-blog.html">Learn more...</a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <div class="right-bottom-image">
+                    <i class="fa fa-sitemap fa-lg"></i>
+                </div>
+                <div>
+                    <p class="p6">Leadership</p>
+                    <p>Meet our leadership team and get to know those managing your investment.</p>
+                </div>
+                <div>
+                    <a class="learn" href="leadership.html">Learn more...</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container last-but-one-div">
+        <div class="row row-content-">
+            <div class="col-md-6 col-sm-4">
+                <div class="left-bottom-image">
+                    <a href="owner.html"><i class="fa fa-car fa-lg"></a></i>
+                </div>
+                <div>
+                    <a href="owner.html"><p class="p7">Sign up as a vehicle owner<span class="arrow">&#8594;</span></a></p>
+                    <hr>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-4">
+                <div class="center-bottom-image">
+                    <a href="driver.html"><i class="fa fa-user fa-lg sign-user"></a></i>
+                </div>
+                <div>
+                    <a href="driver.html"><p class="p7">Sign up as a driver<span class="arrow">&#8594;</span></a></p>
+                    <hr>
+                </div>
             </div>
         </div>
     </div>
 
     <footer class="company-footer">
         <div class="container ">
-            <div class="row row-content"></div>
-                <div class="col-4 col-sm-2 home-link">
-                    <h4><a  class="footer-links" href="index.html"> Work &amp; Pay </a></h4>
-                </div>
-            </div>
-            <div class="row row-content-4">
-                <div class="col-4 col-sm-2 offset-2">
-                    <h5>Company</h5>
+            <div class="row row-content-4 align-item-center">
+                <div class="col-sm-4">
+                    <h4><a class="footer-links" href="index.html"> Work &amp; Pay </a></h4>
+                    <h5 class="footer-links" >Company</h5>
                     <ul class="list-unstyled">
                         <li><a class="footer-links" href="about-us.html">About us</a></li>
-                        <li><a class="footer-links" href="#">How Work &amp; Pay works</a></li>
-                        <li><a class="footer-links" href="#">Leadership</a></li>
-                        <li><a class="footer-links" href="#">Partners</a></li>
-                        <li><a class="footer-links" href="#">Careers</a></li>
-                        <li><a class="footer-links" href="#">News &amp; Blog</a></li>
+                        <li><a class="footer-links" href="how.html">How W&amp;P works</a></li>
+                        <li><a class="footer-links" href="leadership.html">Leadership</a></li>
+                        <li><a class="footer-links" href="partners.html">Partners</a></li>
+                        <li><a class="footer-links" href="careers.html">Careers</a></li>
+                        <li><a class="footer-links" href="news-blog.html">News &amp; Blog</a></li>
                     </ul>
                 </div>
-                <div class="col-4 col-sm-2 offset-1">
-                    <h5>Products</h5>
+                <div class="col-sm-4 footer-product">
+                    <h5 class="footer-links" >Products</h5>
                     <ul class="list-unstyled">
-                        <li><a class="footer-links" href="#">Drivers</a></li>
-                        <li><a class="footer-links" href="#">Owners</a></li>
-                        <li><a class="footer-links" href="#">Tracking</a></li>
+                        <li><a class="footer-links" href="driver.html">Drivers</a></li>
+                        <li><a class="footer-links" href="owner.html">Owners</a></li>
+                        <li><a class="footer-links" href="tracking.html">Tracking</a></li>
                     </ul>
                 </div>
             </div>
         </div>
         <div class="container ">
             <div class="row row-content-4">
-                <div class="col-4 col-sm-5 last-div">
-                    <a class="footer-links"  href="http://instagram.com/"><i class="fa fa-instagram fa-lg"></i></a>
-                    <a class="footer-links" href="http://facebook.com/"><i class="fa fa-facebook fa-lg"></i></a>
-                    <a class="footer-links" href="http://twitter.com/"><i class="fa fa-twitter fa-lg"></i></a>
-                    <a class="footer-links" href="http://youtube.com/"><i class="fa fa-youtube fa-lg"></i></a>
-                    <a class="footer-links" href="http://linkedin.com/"><i class="fa fa-linkedin fa-lg"></i></a>
+                <div class="col-sm-4 last-div">
+                    <a class="footer-links"  href="http://instagram.com/" id="inst-foot"><i class="fa fa-instagram fa-lg"></i></a>
+                    <a class="footer-links" href="http://facebook.com/" id="face-foot"><i class="fa fa-facebook fa-lg"></i></a>
+                    <a class="footer-links" href="http://twitter.com/" id="twit-foot"><i class="fa fa-twitter fa-lg"></i></a>
+                    <a class="footer-links" href="http://youtube.com/" id="utube-foot"><i class="fa fa-youtube fa-lg"></i></a>
+                    <a class="footer-links" href="http://linkedin.com/" id="in-foot"><i class="fa fa-linkedin fa-lg"></i></a>
                 </div>
                 <div class="col-sm-4 phone">
-                    <i class="fa fa-phone fa-lg"></i> +233-246-783-336
+                    <a href="tel:+233246783336"><i class="fa fa-phone fa-lg"></i> +233-246-783-336</a>
                 </div>
-                <div class=" col-sm-3 mail">
-                    <i class="fa fa-envelope fa-lg"></i> info@workandpay.com
+                <div class="col-sm-4 mail">
+                    <a href="mailto:info@worknpay.com"><i class="fa fa-envelope fa-lg"></i> info@worknpay.com</a>
                 </div>
                 </div>
             </div>
@@ -153,6 +233,7 @@
 <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
 <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="js/scripts.js"></script>
 
 </body>
 </html>
