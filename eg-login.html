@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+    <!-- Additional CSS must be placed after Bootstrap CSS -->
+
+    <link rel="stylesheet" href="css/styless.css">
+
+    <title>eg-Login</title>
+</head>
+<body>
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="owner()">Owner</button>
+                <button type="button" class="toggle-btn" onclick="driver()" >Driver</button>
+            </div>
+            <form id="owner" class="input-group">
+                <input type="text" class="input-field" id="inputEmail3" placeholder="Email" required>
+                <input type="text" class="input-field" id="inputPassword" placeholder="Password" required>
+            </form>
+            <form id="driver" class="input-group">
+                <input type="text" class="input-field" id="User-id" placeholder="User Id" required>
+                <input type="text" class="input-field" id="inputEmail3" placeholder="Email" required>
+                <input type="text" class="input-field" id="inputPassword" placeholder="Password" required>
+            </form>
+        </div>        
+    </div>
+
+
+<!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script>
+        let x = document.getElementById("owner");
+        let y = document.getElementById("driver");
+        let z = document.getElementById("btn");
+
+        function driver(){
+            x.style.left = "-400px";
+            y.style.left = "50px";
+            z.style.left = "110px";
+        }
+        function owner(){
+            x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left = "0px";
+        }
+
+
+    </script>
+</body>
+</html>

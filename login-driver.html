@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+    <!-- Additional CSS must be placed after Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Sacramento&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Waiting+for+the+Sunrise&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="build/css/intlTelInput.css">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Login</title>
+</head>
+<body class="login-body">
+    <nav class="navbar navbar-expand-sm sticky-top navbar-login-driver">
+        <a class="navbar-brand-login" href="index.html">
+            <img src="img/logo.png" width="50" height="50" class="d-inline-block main-logo" alt="logo" loading="lazy"></a> 
+            <!-- </a><button type="button" class="btn btn-dark mx-auto">Work &amp; Pay</a></button>    -->
+    </nav>
+
+    <div class="container-fluid logdrive-container">
+        <div>
+            <div class="company-name"><a href="index.html">Work<span> &amp;</span> Pay</a></div>
+        </div>  
+        <div class="row d-flex justify-content-center">
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="sign-in-container">
+                    <h4>Log In</h4>
+                </div>
+                <div class="col-12 col-md-10 narrate-drive">
+                    <p>Drive and earn with us</p> 
+                </div>
+                <form class="form-container">
+                    <div class="form-group row">
+                        <label class="tel-number" for="telephone">Enter your phone number (required)</label>
+                        <input type="tel" class="form-control" id="telephone" aria-describedby="telHelp" placeholder="Mobile number" required>
+                    </div>
+                    <div class="form-group next-container">
+                        <button type="submit" class="btn btn-next text-left btn-block row">NEXT<span class="arrow-next">&#8594;</span></button>
+                    </div>
+                        <div class="dont-text row">
+                            <small id="dont-text" class="form-text">Don't have an account?<span class="sign-up"><a href="sign-up.html"> Sign up</a></span></small>
+                        </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="foot-image"></div>
+    <footer class="login-footer">
+        <div class="container icon-footer">
+            <div class="row row-content">
+                <div class="col-sm-4 last-subcontainer">
+                    <a class="footer-links"  href="http://instagram.com/" id="inst-foot"><i class="fa fa-instagram fa-lg"></i></a>
+                    <a class="footer-links" href="http://facebook.com/" id="face-foot"><i class="fa fa-facebook fa-lg"></i></a>
+                    <a class="footer-links" href="http://twitter.com/" id="twit-foot"><i class="fa fa-twitter fa-lg"></i></a>
+                    <a class="footer-links" href="http://youtube.com/" id="utube-foot"><i class="fa fa-youtube fa-lg"></i></a>
+                    <a class="footer-links" href="http://linkedin.com/" id="in-foot"><i class="fa fa-linkedin fa-lg"></i></a>
+                </div>
+                <div class="col-sm-4 phone">
+                    <a href="tel:+233246783336"><i class="fa fa-phone fa-lg"></i> +233-246-783-336</a>
+                </div>
+                <div class="col-sm-4 mail">
+                    <a href="mailto:info@worknpay.com"><i class="fa fa-envelope fa-lg"></i> info@worknpay.com</a>
+                </div>
+            </div>
+        </div>
+        <br>
+        <hr class="footer-hr">
+        <div class="col-lg-12 col-md-4 col-sm-3 last-content" >
+            <p class="copyright">© 2020 Work &amp; Pay Ltd.</p>
+            <a href="privacy-policy.html"><p class="privacy"> Privacy Policy</p></a>
+            <a href="terms.html"><p class="terms">Terms of Use</p></a>
+        </div>
+    </footer>
+
+<!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+</body>
+</html>
